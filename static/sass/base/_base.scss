@@ -1,0 +1,35 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    /* forcing inheritance */
+    box-sizing: inherit;   
+}
+ 
+html {
+
+    font-size: 62.5%; // 1 rem = 10px ; 10px/16px = 62.5%
+
+    // BREAKPOINTS
+    @include respond(tab-land) { // width < 900?
+        font-size: 50%;  // 1rem = 9px ; then 9/16 
+    }
+
+    @include respond(tab-port) { // width < 600 ?
+        font-size: 45%; // if 1rem = 8px; then 8/16px = 50%
+    }
+
+    @include respond(phone) { // 600
+        font-size: 47%;
+    }
+
+    @include respond(big-desktop) {
+        font-size: 65%; //1rem = 12, 12/16
+    }
+}
+
+body {
+    box-sizing: border-box;
+
+}

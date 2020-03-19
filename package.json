@@ -1,0 +1,14 @@
+{
+  "name": "whiteboard",
+  "version": "1.0.0",
+  "description": "whiteboard",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass" : "node-sass static/sass/main.scss static/css/style.css -w"
+  },
+  "author": "Grace Chung",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.13.1"
+  }
+}
